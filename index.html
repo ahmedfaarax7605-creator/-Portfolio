@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="logo">🎓 Student Dashboard</div>
+      <nav>
+        <a href="#overview" class="active">Overview</a>
+        <a href="#courses">My Courses</a>
+        <a href="#assignments">Assignments</a>
+        <a href="#settings">Settings</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <header class="topbar">
+        <div>
+          <h1 id="greeting">Welcome back, Ahmed 👋</h1>
+          <p id="date"></p>
+        </div>
+        <span class="avatar">AF</span>
+      </header>
+
+      <section id="overview" class="stats">
+        <div class="stat-card"><h3>4</h3><p>Enrolled Courses</p></div>
+        <div class="stat-card"><h3>2</h3><p>Completed</p></div>
+        <div class="stat-card"><h3>2</h3><p>In Progress</p></div>
+        <div class="stat-card"><h3>87%</h3><p>Average Grade</p></div>
+      </section>
+
+      <section id="courses" class="courses">
+        <h2>My Courses</h2>
+        <div class="course-list" id="courseList"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6fb;
+  color: #1f2937;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #1e293b;
+  color: #ffffff;
+  padding: 24px 16px;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.sidebar nav a {
+  display: block;
+  color: #cbd5e1;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background: #334155;
+  color: #ffffff;
+}
+
+/* Main content */
+.content {
+  flex: 1;
+  padding: 24px 32px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.topbar h1 {
+  font-size: 24px;
+}
+
+.topbar p {
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.avatar {
+  background: #6366f1;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+/* Stats */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+  font-size: 28px;
+  color: #6366f1;
+}
+
+.stat-card p {
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+/* Courses */
+.courses h2 {
+  margin-bottom: 16px;
+}
+
+.course-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.course-info {
+  flex: 1;
+}
+
+.course-info h3 {
+  font-size: 16px;
+}
+
+.course-info p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.progress {
+  flex: 2;
+  background: #e5e7eb;
+  border-radius: 999px;
+  height: 10px;
+}
+
+.progress-bar {
+  height: 10px;
+  background: #6366f1;
+  border-radius: 999px;
+}
+
+.percent {
+  font-weight: 600;
+  min-width: 48px;
+  text-align: right;
+}
+
+.btn-complete {
+  background: #10b981;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
